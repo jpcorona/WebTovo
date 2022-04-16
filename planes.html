@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tovo - Software Gastronómico</title>
+  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="plugins/date-picker/css/gijgo.min.css" type="text/css" />
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/theme-mode-custom.css">
+  <!-- Custom stylesheet -->
+</head>
+
+<body data-theme="light">
+  <div class="site-wrapper overflow-hidden">
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-right pt-6 pt-lg-2 bg-default-6 site-header--absolute">
+      <div class="container">
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
+          <!-- Brand Logo-->
+          <div class="brand-logo"><a href="index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo-main-black.png" alt="" class="light-version-logo ">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo-main-white.png" alt="" class="dark-version-logo">
+            </a></div>
+          <div class="collapse navbar-collapse" id="mobile-menu1">
+            <div class="navbar-nav-wrapper">
+              <ul class="navbar-nav main-menu">
+               
+                 <li class="nav-item">
+                  <a class="nav-link" href="index.html" role="button" aria-expanded="false">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="equipo.html" role="button" aria-expanded="false">Equipo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="planes.html" role="button" aria-expanded="false">Planes</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="#" role="button" aria-expanded="false">Funcionalidades</a>
+                </li>
+              
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown02" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soluciones<i class="icon icon-small-down"></i></a>
+                  <ul class="gr-menu-dropdown dropdown-menu" aria-labelledby="navbarDropdown02">
+                    <li class="drop-menu-item">
+                      <a href="#">
+                        Restaurantes
+                      </a>
+                    </li>
+                    <li class="drop-menu-item">
+                      <a href="#">
+                        Boleta Eelectrónica
+                      </a>
+                    </li>
+                   
+
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#" role="button" aria-expanded="false">Contacto</a>
+                </li>
+              
+              
+              </ul>
+            </div>
+           <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+              <i class="gr-cross-icon"></i>
+            </button>
+          </div>
+          <div class="header-btn  ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block">
+            <a class="btn btn-primary gr-text-9 d-none d-xs-inline-flex " href="#">
+              Comienza Ahora
+            </a>
+          </div>
+          <!-- Mobile Menu Hamburger-->
+          <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu1" aria-controls="mobile-menu1" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+            <span class="hamburger hamburger--squeeze js-hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <div class="inner-banner bg-default-2 pt-25 pt-lg-29">
+      <div class="container">
+        <div class="row  justify-content-center pt-5">
+          <div class="col-xl-8 col-lg-9">
+            <div class="px-md-15 text-center mb-5 mb-lg-13">
+              <h2 class="title gr-text-2 mb-9 mb-lg-12">Precios y Planes</h2>
+              <p class="gr-text-8 mb-0">Todo lo que necesita tu negocio, a un precio que puedes pagar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing section  -->
+    <div class="pricing-section bg-default-2 pb-7 pb-lg-20">
+      <div class="container">
+        <div class="text-center pt-9" id="pricing-dynamic-deck" data-pricing-dynamic data-value-active="yearly">
+          <div class="mb-13 d-inline-flex position-relative" id="pricing-dynamic-deck--head">
+            <span class="period month gr-text-8 gr-text-color ">Mensual</span>
+            <a href="javascript:" class="btn-toggle active mx-3 price-deck-trigger" data-pricing-trigger data-target="#pricing-dynamic-deck"><span class="round"></span></a>
+            <span class="period year gr-text-8 gr-text-color">Anual</span>
+            <span class="badge gr-badge text-primary gr-text-12 gr-bg-blue-opacity-1 rounded-pill ml-5 text-uppercase">Obtén un descuento pagando anual</span>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-10 mb-9">
+              <!-- .pricing card -->
+              <div class="pricing-card bg-white gr-hover-shadow-1 border text-left pt-9 pb-9 pr-9 pr-xl-13  pl-9 pl-xl-13 bg-white rounded-10">
+                <div class="price-content">
+                  <span class="small-title gr-text-12 text-primary font-weight-bold text-uppercase">Básico</span>
+                  <div class="d-flex align-items-end mt-11 ">
+                    <span class="currency mr-2 gr-text-6 font-weight-bold line-spacing-none text-blackish-blue">$</span>
+                    <h2 class="price-value gr-text-2 font-weight-bold line-spacing-none mb-0 dynamic-value text-blackish-blue" data-active="35.000" data-monthly="40.000" data-yearly="35.000">
+                      <span class="d-none">.</span>
+                    </h2>
+                    <span class="per gr-text-9 text-blackish-blue">/mes</span>
+                  </div>
+                  <span class="price-bottom-text dynamic-value gr-text-11 mt-5 text-blackish-blue gr-opacity-7 d-inline-flex" data-active="Pagando Anual" data-monthly="Pagando Mensual" data-yearly="Pagando Anual"></span>
+                  <ul class="card-list list-style-check pl-0 mt-7 mt-lg-11">
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Todas las funciones</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>3 Usuarios</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Módulo Mesas</li>
+                    <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Módulo Mostrador</li>
+                    <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Módulo Delivery</li>
+                    <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Módulo Bodega</li>
+                    <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Boleta y Factura Electrónica</li>
+                  </ul>
+                </div>
+                 <a href="#" class="btn btn-primary with-icon gr-hover-y px-xl-8 px-lg-4 px-sm-8 px-4">Comienza ahora<i class="icon icon-tail-right font-weight-bold"></i></a>
+                <span class="btn-bottom-text d-block gr-text-11 text-blackish-blue gr-opacity-7 mt-5">* Costo de implementación 5 UF</span>
+              </div>
+              <!-- /.pricing carde Ends-->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 mb-9">
+              <!-- .pricing card -->
+              <div class="pricing-card bg-white gr-hover-shadow-1 border text-left pt-9 pb-9 pr-9 pr-xl-13  pl-9 pl-xl-13 bg-white rounded-10">
+                <div class="price-content">
+                  <span class="small-title gr-text-12 text-primary font-weight-bold text-uppercase">Estandár</span>
+                  <div class="d-flex align-items-end mt-11 ">
+                    <span class="currency mr-2 gr-text-6 font-weight-bold line-spacing-none text-blackish-blue">$</span>
+                    <h2 class="price-value gr-text-2 font-weight-bold line-spacing-none mb-0 dynamic-value text-blackish-blue" data-active="45.000" data-monthly="50.000" data-yearly="45.000">
+                      <span class="d-none">.</span>
+                    </h2>
+                    <span class="per gr-text-9 text-blackish-blue">/mes</span>
+                  </div>
+                  <span class="price-bottom-text dynamic-value gr-text-11 mt-5 text-blackish-blue gr-opacity-7 d-inline-flex" data-active="Pagando Anual" data-monthly="Pagando Mensual" data-yearly="Pagando Anual"></span>
+                  <ul class="card-list list-style-check pl-0 mt-7 mt-lg-11">
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Todas las funciones</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Usuarios Ilimitados</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Módulo Mesas</li>
+                    <li class=" gr-text-9"><i class="icon icon-check-simple"></i>Módulo Mostrador</li>
+                    <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Módulo Delivery</li>
+                    <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Módulo Bodega</li>
+                    <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Boleta y Factura Electrónica</li>
+                  </ul>
+                </div>
+                 <a href="#" class="btn btn-primary with-icon gr-hover-y px-xl-8 px-lg-4 px-sm-8 px-4">Comienza ahora<i class="icon icon-tail-right font-weight-bold"></i></a>
+                <span class="btn-bottom-text d-block gr-text-11 text-blackish-blue gr-opacity-7 mt-5">* Costo de implementación 5 UF</span>
+              </div>
+              <!-- /.pricing carde Ends-->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 mb-9">
+              <!-- .pricing card -->
+              <div class="pricing-card bg-white gr-hover-shadow-1 border text-left pt-9 pb-9 pr-9 pr-xl-13  pl-9 pl-xl-13 bg-white rounded-10">
+                <div class="price-content">
+                  <span class="small-title gr-text-12 text-primary font-weight-bold text-uppercase">Premium</span>
+                  <div class="d-flex align-items-end mt-11">
+                    <span class="currency mr-2 gr-text-6 font-weight-bold line-spacing-none text-blackish-blue">$</span>
+                    <h2 class="price-value gr-text-2 font-weight-bold line-spacing-none mb-0 dynamic-value text-blackish-blue" data-active="50.000" data-monthly="60.000" data-yearly="50.000">
+                      <span class="d-none">.</span>
+                    </h2>
+                    <span class="per gr-text-9 text-blackish-blue">/mes</span>
+                  </div>
+                  <span class="price-bottom-text dynamic-value gr-text-11 mt-5 text-blackish-blue gr-opacity-7 d-inline-flex" data-active="Pagando Anual" data-monthly="Pagando Mensual" data-yearly="Pagando Anual"></span>
+                   <ul class="card-list list-style-check pl-0 mt-7 mt-lg-11">
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Todas las funciones</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Usuarios Ilimitados</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Módulo Mesas</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Módulo Mostrador</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Módulo Delivery</li>
+                    <li class="gr-text-9"><i class="icon icon-check-simple"></i>Módulo Bodega</li>
+                    <li class="gr-text-9"><i class="icon icon-simple-remove"></i>Boleta y Factura Electrónica</li>
+                  </ul>
+                </div>
+                 <a href="#" class="btn btn-primary with-icon gr-hover-y px-xl-8 px-lg-4 px-sm-8 px-4">Comienza ahora<i class="icon icon-tail-right font-weight-bold"></i></a>
+                <span class="btn-bottom-text d-block gr-text-11 text-blackish-blue gr-opacity-7 mt-5">* Costo de implementación 5 UF</span>
+              </div>
+              <!-- /.pricing carde Ends-->
+            </div>
+          </div>
+           <!-- Servicios adicionales inicio  -->
+    <div class="service-section bg-default-4 pt-15 pb-13 py-lg-25">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-7 col-md-9">
+            <div class="section-title text-center mb-11 mb-lg-19 px-lg-3">
+              <h4 class="pre-title gr-text-12 text-red text-uppercase mb-7">Servicios Adicionales</h4>
+              <h2 class="title gr-text-4">Puedes contratar los siguientes módulos adicionales
+
+</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center position-relative gr-z-index-1">
+          <div class="col-md-6 col-lg-4 mb-9 mb-lg-0" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="service-card rounded-10 gr-hover-shadow-4 d-flex flex-column text-center pt-15 px-9 pb-11 dark-mode-texts bg-green h-100">
+              <div class="card-img mb-11">
+                <img src="image/l5/png/l5-service-card1.png" alt="...">
+              </div>
+              <h3 class="card-title gr-text-6 mb-6">Control Bodega</h3>
+              <p class="gr-text-9 mb-11">Con el módulo bodega podrás controlar las entradas y salidas de tu bodega.</p>
+              <a href="#" class="gr-text-9 btn-link with-icon text-white mt-auto">Saber Más <i class="icon icon-tail-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-9 mb-lg-0" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="service-card rounded-10 gr-hover-shadow-4 d-flex flex-column text-center pt-15 px-9 pb-11 dark-mode-texts bg-blue h-100">
+              <div class="card-img mb-11">
+                <img src="image/l5/png/l5-service-card2.png" alt="...">
+              </div>
+              <h3 class="card-title gr-text-6 mb-6">Factura Electrónica</h3>
+              <p class="gr-text-9 mb-11">Integra tu negocio directamente a SII Chile para emitir boletas y facturas electrónicas.</p>
+              <a href="#" class="gr-text-9 btn-link with-icon text-white mt-auto">Saber más <i class="icon icon-tail-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-9 mb-lg-0" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="service-card rounded-10 gr-hover-shadow-4 d-flex flex-column text-center pt-15 px-9 pb-11 dark-mode-texts bg-red h-100">
+              <div class="card-img mb-11">
+                <img src="image/l5/png/l5-service-card3.png" alt="...">
+              </div>
+              <h3 class="card-title gr-text-6 mb-6">Tienda Online</h3>
+              <p class="gr-text-9 mb-11">Crea tu tienda en línea en tan solo unos pasos y comieza a recibir pagos y vender en internet.</p>
+              <a href="#" class="gr-text-9 btn-link with-icon text-white mt-auto">Saber más <i class="icon icon-tail-right"></i></a>
+            </div>
+            <div class="gr-abs-br-custom gr-z-index-n1" data-aos="zoom-in-right" data-aos-delay="600" data-aos-duration="800" data-aos-once="true">
+              <img src="image/l5/png/l5-dot-shape2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--FIN SERVICIOS ADICIONALES-->
+        </div>
+      </div>
+    </div>
+    <!-- Content section 2 with FAQ accordion -->
+    <div class="content-section pt-13 pt-lg-28 pb-15 pb-lg-29 bg-blackish-blue dark-mode-texts">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 col-lg-6 col-xl-5">
+            <div class="section-title content-text mb-13 mb-lg-16">
+              <h2 class="title gr-text-3 mb-6">Preguntas Frecuentes</h2>
+              <p class="gr-text-8">¿Necesitas más información?</p>
+            </div>
+            <div class="content-widget">
+              <div class="row">
+                <div class="col-md-6 col-lg-9 col-xl-10" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+                  <div class="single-widget media mb-9 mb-lg-12">
+                    <div class="widget-icon circle-30 bg-green mr-7">
+                      <i class="icon icon-check-2-2 text-white"></i>
+                    </div>
+                    <div class="widget-text">
+                      <h3 class="w-title gr-text-7">Resolvemos tus dudas</h3>
+                      <p class="gr-text-9 mb-0">Nos caracterizamos por nuestra transparencia y compromiso con los clientes. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-9 col-xl-10" data-aos="fade-right" data-aos-duration="1100" data-aos-once="true">
+                  <div class="single-widget media mb-9 mb-lg-0">
+                   <!-- <div class="widget-icon circle-30 bg-green mr-7">
+                      <i class="icon icon-check-2-2 text-white"></i>
+                    </div>-->
+                    <!--<div class="widget-text">
+                      <h3 class="w-title gr-text-7">24/7 Hour Support</h3>
+                      <p class="gr-text-9 mb-0">With lots of unique blocks, you can easily build a page without coding. </p>
+                    </div>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Accordion -->
+          <div class="col-md-10 col-lg-6 col-xl-6 offset-xl-1 mt-9 mt-lg-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+            <!-- FAQ Accordion -->
+            <div class="accordion pl-9 pr-8 rounded-10 bg-white border-green border-top-5" id="accordionExample">
+              <div class="border-bottom overflow-hidden">
+                <div class="mb-0 border-bottom-0" id="heading2-1">
+                  <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse2-1" aria-expanded="true" aria-controls="collapse2-1">
+                    ¿Cuántos días incluye el período de prueba?
+                  </button>
+                </div>
+                <div id="collapse2-1" class="collapse show" aria-labelledby="heading2-1" data-parent="#accordionExample">
+                  <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+                    Te ofrecemos 15 días para probar el sistema, a partir del día de la creación de tu cuenta.
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom overflow-hidden">
+                <div class="mb-0 border-bottom-0" id="heading2-2">
+                  <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse2-2" aria-expanded="false" aria-controls="collapse2-2">
+                    ¿Existe algún costo extra?
+                  </button>
+                </div>
+                <div id="collapse2-2" class="collapse " aria-labelledby="heading2-2" data-parent="#accordionExample">
+                  <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+                    El soporte es remoto (On-line) y no implica ningún costo adicional. Tovo no requiere de ningún tipo de mantenimiento de tu parte. Todas las actualizaciones son automáticas y completamente gratuitas.
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom overflow-hidden">
+                <div class="mb-0 border-bottom-0" id="heading2-3">
+                  <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse2-3" aria-expanded="false" aria-controls="collapse2-3">
+                    ¿Hay algún beneficio si pago por adelantado?
+                  </button>
+                </div>
+                <div id="collapse2-3" class="collapse " aria-labelledby="heading2-3" data-parent="#accordionExample">
+                  <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+                    Si pagas el año completo te bonificamos dos meses. Es decir, pagas soplo 10 meses.
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom overflow-hidden">
+                <div class="mb-0 border-bottom-0" id="heading2-4">
+                  <button class="btn-reset gr-text-7 font-weight-bold text-left text-blackish-blue px-0 py-8 accordion-trigger arrow-icon w-100" type="button" data-toggle="collapse" data-target="#collapse2-4" aria-expanded="false" aria-controls="collapse2-4">
+                    ¿Puedo cancelar o cambiar de plan cuando quiera?
+                  </button>
+                </div>
+                <div id="collapse2-4" class="collapse " aria-labelledby="heading2-4" data-parent="#accordionExample">
+                  <div class="gr-color-blackish-blue-opacity-7 mt-n3 gr-text-9 pb-8 pr-8">
+                    ¡Claro! Tovo es un servicio sin contratos forzosos de por medio, puedes pagar mensual o anualmente y cancelar tu plan en el momento que tú lo decidas.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- CTA section -->
+    <div class="cta-section bg-green dark-mode-texts pt-12 pb-13 pt-md-15 pb-md-15 ">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-10">
+            <div class="cta-text d-flex flex-column flex-sm-row align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
+              <h2 class="title gr-text-5 mb-6 mb-sm-0 mr-sm-9 ">¿Listo para comenzar?</h2>
+              <div class="cta-btn" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+                <a href="#" class="btn btn-white bg-white gr-hover-y">Pruébalo Gratis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ <!-- Footer section -->
+    <div class="footer-section dark-mode-texts bg-blackish-blue">
+      <div class="container">
+        <div class="footer-top pt-15 pt-lg-25 pb-lg-19">
+          <div class="row">
+            <div class="col-6 col-lg-2">
+              <div class="single-footer mb-13 mb-lg-9">
+                <p class="footer-title gr-text-11 mb-7">Sobre Tovo</p>
+                <ul class="footer-list list-unstyled">
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Nuestro Equipo</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Planes</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Funcionalidades</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Menú Digital</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-lg-2">
+              <div class="single-footer mb-13 mb-lg-9">
+                <p class="footer-title gr-text-11 mb-7">Soporte y Ayuda</p>
+                <ul class="footer-list list-unstyled">
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">F.A.Q</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Centro de Ayuda</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Soporte Hardware</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-lg-2">
+              <div class="single-footer mb-13 mb-lg-9">
+                <p class="footer-title gr-text-11 mb-7">Soluciones</p>
+                <ul class="footer-list list-unstyled">
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Restaurante</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Dark Kitchen</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Food Truck</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Cafetería</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Pastelería</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">Bares</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-lg-15">
+              <div class="single-footer mb-13 mb-lg-9">
+                <p class="footer-title gr-text-11 mb-7">Contacto</p>
+                <ul class="footer-list list-unstyled">
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">ventas@tovo.cl</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">soporte@tovo.cl</a></li>
+                  <li class="py-2"><a class="gr-text-9 gr-text-color" href="#">administracion@tovo.cl</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="single-footer mb-13 mb-lg-9">
+                <p class="footer-title gr-text-11 mb-7"></p></br>
+                <ul class="footer-list list-unstyled">
+                  <li class="py-2"><a class="gr-text-9 text-primary font-weight-bold hover-underline active text-white" href="tel:+133-394-3439-1435">+569 51114279</a></li>
+                  <li class="py-2"><a class="gr-text-9 text-primary font-weight-bold hover-underline active text-white" href="mailto:support@grayic.com">Lunes a lunes </a></li>
+                  <li class="py-2"><a class="gr-text-9 text-primary font-weight-bold hover-underline active text-white" href="tel:+133-394-3439-1435">de 9:00 am a 1:00 am</a></li>
+                  <li class="py-2"><a class="gr-text-9 text-primary font-weight-bold hover-underline active text-white" href="tel:+133-394-3439-1435">contacto@tovo.cl</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area border-top pt-9 pb-8">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <p class="copyright-text gr-text-11 mb-6 mb-lg-0 gr-text-color-opacity text-center text-lg-left">
+                © 2021 Tovo, Todos los derechos reservados, Made by Geniapp with
+                <i class="icon icon-heart-2-2 text-sky-blue align-middle ml-2"></i>
+              </p>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+              <ul class="social-icons list-unstyled mb-0">
+                <li class="ml-7"><a href="#" class="gr-text-color"><i class="icon icon-logo-twitter"></i></a></li>
+                <li class="ml-7"><a href="#" class="gr-text-color"><i class="icon icon-logo-facebook"></i></a></li>
+                <li class="ml-7"><a href="#" class="gr-text-color"><i class="icon icon-instant-camera-2"></i></a></li>
+                <li class="ml-7"><a href="#" class="gr-text-color"><i class="icon icon-logo-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/date-picker/js/gijgo.min.js"></script>
+  <script src="plugins/counter-up/jquery.waypoints.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+
+<!-- Mirrored from finestdevs.com/demos/shade-pro/light/pricing-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Apr 2021 16:22:51 GMT -->
+</html>
